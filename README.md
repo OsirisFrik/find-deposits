@@ -1,5 +1,10 @@
-# Vue 3 + TypeScript + Vite
+# find-deposits
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+This projects is a simple tool to find the deposits that correspond to a payment.
 
-Learn more about the recommended Project Setup and IDE Support in the [Vue Docs TypeScript Guide](https://vuejs.org/guide/typescript/overview.html#project-setup).
+## Features
+
+- Reads a CSV file with deposits
+- Reads a CSV file with payments
+- Processes the payments and finds the corresponding deposits
+- Writes a CSV file with the results
