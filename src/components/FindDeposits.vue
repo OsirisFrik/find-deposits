@@ -24,6 +24,7 @@ import {
   StepperTitle,
   StepperTrigger
 } from './ui/stepper'
+import ExampleDialog from './ExampleDialog.vue'
 
 enum Steps {
   DEPOSITS,
@@ -240,6 +241,7 @@ function onDownload() {
         <ArrowLeftIcon />
         Volver
       </Button>
+      <ExampleDialog/>
       <Button
         v-if="currentStep < Steps.PROCESS"
         :disabled="!hasNext()"
