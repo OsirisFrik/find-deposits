@@ -245,12 +245,12 @@ function onDownload() {
         :disabled="!hasNext()"
         @click="
           () => {
-            if (currentStep === 1 && (!deposits || deposits.length === 0)) {
+            if (currentStep === Steps.DEPOSITS && (!deposits || deposits.length === 0)) {
               toast.error('Debe cargar un archivo de depósitos')
               return
             }
 
-            if (currentStep === 2 && (!payments || payments.length === 0)) {
+            if (currentStep === Steps.PAYMENTS && (!payments || payments.length === 0)) {
               toast.error('Debe cargar un archivo de pagos')
               return
             }
